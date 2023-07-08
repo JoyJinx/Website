@@ -1,0 +1,60 @@
+body {
+    color: #282A3A;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+}
+
+.top {
+    width: auto;
+    height: auto;
+    color: #282A3A;
+    position: relative;
+    background: url(../images/batman.webp) no-repeat;
+    
+    background-size: 3000%;
+}
+
+.mid {
+    position: relative;
+    color: #181818;
+    
+}
+
+.ptext{
+    
+    text-align: left;
+    
+}
+
+.sktext{ font-family: 'Cinzel', serif; }
+
+.skill-1 {
+    float: left;
+    width: 360px;
+    height: 300px;
+}
+
+#bigtit {
+    font-size: 6rem;
+    color: #C69749;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    display: inline-block;
+    
+}
+
+#descr {
+    margin-top: 5%;
+    font-size: 2rem;
+    position: absolute;
+    top: 39%;
+    left: 39%;
+    color: #735F32;
+}
+
