@@ -32,7 +32,7 @@ p {
 }
 
 .top {
-  background: url(../../images/batman.webp) center;
+  background: url(batpage/batman.webp) center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
