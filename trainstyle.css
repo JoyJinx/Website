@@ -1,0 +1,163 @@
+body {
+  background: linear-gradient(0deg, #000000, 10%, #282a3a, #735f32);
+  margin: 0;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  font-family: "Pirata One", cursive;
+  font-size: 5rem;
+  color: #daaf4d;
+}
+
+#subtitle {
+  margin: -10px auto auto auto;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #af8c39;
+}
+
+h3 {
+  color: #af8c39;
+  font-size: 1.3em;
+}
+
+p {
+  color: ivory;
+  font-size: 1.1rem;
+  word-spacing: 1.7;
+}
+
+.top {
+  background: url(../../images/batman.webp) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: fit-content;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 34%;
+}
+
+.profile {
+  margin-top: 30px;
+}
+
+#hello {
+  margin-bottom: 5px;
+}
+
+.mid {
+  margin: 40px auto 50px auto;
+}
+
+.profile-img {
+  margin: none auto;
+  width: 300px;
+  height: 240px;
+}
+.about {
+  width: 30%;
+  margin: 0 auto 40px auto;
+}
+
+.line {
+  width: 10%;
+  border: dotted #af8c39 7px;
+  border-top: none;
+  margin: 100px auto;
+}
+
+.skills {
+  margin: 150px auto;
+}
+
+#skills {
+  font-size: 2rem;
+  text-shadow: 3px 3px #060816;
+  margin: auto auto 100px auto;
+}
+
+.skill-row {
+  width: 60%;
+  margin: auto auto 250px auto;
+  text-align: left;
+}
+
+.pack {
+  width: 50%;
+  display: inline-block;
+  margin: auto;
+}
+
+#money {
+  width: 40%;
+  float: left;
+}
+
+.ninja {
+  margin: 20px auto 40px auto;
+  width: 40%;
+  float: right;
+}
+
+.tech {
+  width: 50%;
+  float: left;
+}
+
+.btn {
+  background: #555b85;
+  background-image: -webkit-linear-gradient(top, #555b85, #0c0c0f);
+  background-image: -moz-linear-gradient(top, #555b85, #0c0c0f);
+  background-image: -ms-linear-gradient(top, #555b85, #0c0c0f);
+  background-image: -o-linear-gradient(top, #555b85, #0c0c0f);
+  background-image: linear-gradient(to bottom, #555b85, #0c0c0f);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 2px 7px #0a0a09;
+  -moz-box-shadow: 0px 2px 7px #0a0a09;
+  box-shadow: 0px 2px 7px #0a0a09;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 12px 40px 12px 40px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d1d175;
+  background-image: -webkit-linear-gradient(top, #d1d175, #151852);
+  background-image: -moz-linear-gradient(top, #d1d175, #151852);
+  background-image: -ms-linear-gradient(top, #d1d175, #151852);
+  background-image: -o-linear-gradient(top, #d1d175, #151852);
+  background-image: linear-gradient(to bottom, #d1d175, #151852);
+  text-decoration: none;
+}
+
+.bot {
+  margin-top: 100px;
+  background-color: #282a3a;
+  padding: 70px 0 30px 0;
+}
+
+a {
+  text-shadow: 0.4px 0.4px #000000;
+  font-weight: bolder;
+  color: #020214;
+  font-family: "Dosis", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover:not(.btn) {
+  color: #af8c39;
+}
