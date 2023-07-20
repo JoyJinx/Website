@@ -3,113 +3,378 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dark Knight</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="batpage/icons8-batman-67.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dosis&family=Pirata+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dosis&family=Pirata+One&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="../CSS files/batstyles.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <script
+      src="https://kit.fontawesome.com/52efd13106.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="top">
-      <img style="visibility: hidden;" id="batmain" src="batpage/batman.webp" alt="batmain" /> 
-      <div class="title">
-        <h1>I'm Batman.</h1>
-        <h2 id="subtitle">A man punching men in the night.</h2>
-      </div>
-    </div>
+    <section id="intro">
+      <div class="container-fluid">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark shadow-lg p-3 mb-0 bg-transparent rounded"
+        >
+          <a class="navbar-brand" href="#">Dark Knight</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#subscribe">Subscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#downloading"> Downloads </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-title">
+              The only official Batman page on the internet. Download the BatApp
+              right away.
+            </h1>
+            <div class="mt-4">
+              <button
+                type="button"
+                class="btn btn-outline-light btn-lg download-btn"
+              >
+                <i class="fa-brands fa-apple fa-x"></i>Download
+              </button>
+              <button type="button" class="btn btn-light btn-lg download-btn">
+                <i class="fa-brands fa-google-play fa-x"></i>Download
+              </button>
+            </div>
+          </div>
 
-    <div class="mid">
-      <div class="profile">
-        <img
-          class="profile-img"
-          src="batpage/Batman-Logo-2000.png"
-          alt="profile-img"
-        />
-        <h2 id="hello" style="font-size: 2rem;">Hello there!</h2>
-        <p class="about">
-          I'm a professional detective and crime fighter, currently working on
-          Gotham's evergrowing organized corruption.
+          <div class="col-lg-6">
+            <img
+              src="../images/pngimg.com - batman_PNG27.png"
+              alt="first-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="row">
+        <div class="col-lg-4">
+          <i class="fa-solid fa-sack-dollar fa-5x"></i>
+          <h2 class="feature-title">Unlimited Wealth</h2>
+          <p class="mt-4 px-3">
+            Blessed by God, I have billions of dollars at my disposal which I
+            can use in pursuit of my goals.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-solid fa-microchip fa-5x"></i>
+          <h2 class="feature-title">Advanced Technology</h2>
+          <p class="mt-4 px-3">
+            Accompanied by the best minds of Gotham, I can get any machine and
+            softwares I need to fulfill my missions.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-solid fa-user-ninja fa-5x"></i>
+          <h2 class="feature-title">Actually a Ninja</h2>
+          <p class="mt-4 px-3">
+            Trained by the legendary Ra's al Ghul, I was chosen to be the
+            successor of league of shadows.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Testimonials">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide py-5"
+        data-ride="carousel"
+        data-interval="4000"
+        data-pause="hover"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="testimonial-p">
+              Hmmm,handsome? tall and rich?? and even lives alone??? this man is
+              "MINE" get away from him.
+            </p>
+            <img src="../images/pngegg.png" class="testimonial-img" alt="..." />
+            <em>Catwoman</em>
+          </div>
+          <div class="carousel-item">
+            <p class="testimonial-p">
+              Best friend I've ever had. Great to have around, even better when
+              talking to. Best when fighting. Never gonna let you go bro.
+            </p>
+            <img
+              src="../images/joker-face-removebg-preview.png"
+              class="testimonial-img"
+              alt="..."
+            />
+            <em>Joker from Gotham</em>
+          </div>
+          <div class="carousel-item">
+            <p class="testimonial-p">
+              Ehem, riddle me this :
+              <br />
+              Alive without breath, As cold as death; Never thirsty, ever
+              drinking, All in mail never clinking.
+              <br />
+            </p>
+            <img
+              src="../images/pngegg(1).png"
+              class="testimonial-img"
+              alt="..."
+            />
+            <em>Riddler ?</em>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleControls"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleControls"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="subscribe">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Subscription</h1>
+        <p class="lead">
+          Subscribe to your preferred plan of membership in BatApp and enjoy
+          being in Batbro community. Of course ladies can become a member too.
         </p>
       </div>
-      <img
-        src="https://media2.giphy.com/media/W3MyhCrgfBlXDV349M/giphy.gif?cid=ecf05e47bojrqssnadqsq5pg9eeqp6s15cvgrjgv4o2dqzr2&ep=v1_stickers_search&rid=giphy.gif&ct=s"
-        alt=""
-        height="260"
-        loading="lazy"
-      />
 
-      <!-- <hr class="line" /> -->
-      <div class="skills">
-        <h2 id="skills">My Skills</h2>
-        <div class="skill-row">
-          <img
-            id="money"
-            src="batpage/1084_U1RVRElPIEtBVCAwODEtMzA-removebg-preview.png"
-            alt="money"
-          />
-          <div class="pack">
-            <h3>Being Rich</h3>
-            <p>
-              Favoured by the god, i was born into a wealthy noble family.
-              Though my family didn't last becuase of Gotham's injustice, their
-              belongings left for me to not worry about food and bills.
-            </p>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="card mb-4 bg-dark border-light">
+            <div class="card-header bg-secondary border-light">
+              <h4 class="my-0 font-weight-bold">Bronze</h4>
+            </div>
+            <div class="card-body border-light">
+              <h1 class="card-title pricing-card-title">
+                <small class="text">FREE</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Get in touch with Batman</li>
+                <li>Request for help</li>
+                <li>Report crimes of Gotham</li>
+                <li>Member of community</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-light border-light"
+              >
+                Sign up for free
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="skill-row">
-          <img
-            class="ninja"
-            src="batpage/vecteezy_ninja-mascot-vector-illustration_17736822-removebg-preview.png"
-            alt="ninja"
-          />
-          <div class="pack">
-            <h3>Master of Ninjutsu</h3>
-            <p>
-              Trained under the legendary Ra's al Ghul to be his successor and
-              inheriting his legacy, League of Shadows. In the end, I saw
-              through his evil, sabotaged his plans and left the league to it's
-              fall.
-            </p>
+          <div class="card mb-4 bg-dark border-light">
+            <div class="card-header bg-secondary border-light">
+              <h4 class="my-0 font-weight-bold">Silver</h4>
+            </div>
+            <div class="card-body border-light">
+              <h1 class="card-title pricing-card-title">
+                $15 <small class="text">/ month</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Membership of Batman's private channel</li>
+                <li>Getting in touch with Alfred</li>
+                <li>Personal rescue missions if needed</li>
+                <li>Badge of membership granted</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-dark border-light"
+              >
+                Get your membership!
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="skill-row">
-          <img
-            class="tech"
-            src="batpage/vecteezy_ring-technology-neon-light-futuristic-background_12000476-removebg-preview-removebg-preview.png"
-            alt="tech"
-          />
-          <div class="pack">
-            <h3>Cutting edge Technologies</h3>
-            <p>
-              Associated with some of the best minds namely, Mr. Fox and my
-              loyal buttler Alfred I am supported with the most advanced gadgets
-              and tools needed to overcome my enemies with no bloodshed.
-            </p>
+          <div class="card mb-4 bg-dark border-light">
+            <div class="card-header bg-secondary border-light">
+              <h4 class="my-0 font-weight-bold">Gold</h4>
+            </div>
+            <div class="card-body border-light">
+              <h1 class="card-title pricing-card-title">
+                $29 <small class="text">/ month</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Get to know the Batman identity</li>
+                <li>Live footage of Batman in action</li>
+                <li>Become a moderator of community</li>
+                <li>Selfie with batman</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-dark border-light"
+              >
+                Become a Batbro!
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <hr class="line" />
-      <div class="pack">
-        <h2 style="margin: 0 auto 3px auto">Get In Touch.</h2>
-        <h3 style="margin: 0 auto">Gotham needs your intel.</h3>
-        <p style="margin: 15px auto 40px auto; width: 60%">
-          If you got any clue on a gang crime or organized corruption in Gotham,
-          I would gladly appreciate it and certainly Gotham will too.
-        </p>
-        <a class="btn" href="mailto:Batman@Gotham.com">CONTACT ME</a>
+    </section>
+    <section id="downloading">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <h2 class="download-text mt-4">
+              Download the latest version of BatApp to stay in touch with Batman
+              community and get the benefits of your membership.
+            </h2>
+            <div class="mt-5">
+              <button
+                type="button"
+                class="btn btn-outline-light btn-lg download-btn"
+              >
+                <i class="fa-brands fa-apple fa-x"></i>Download
+              </button>
+              <button type="button" class="btn btn-light btn-lg download-btn">
+                <i class="fa-brands fa-google-play fa-x"></i>Download
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="../images/downloading-png-6989.png" alt="download" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Home</a>
+              </li>
+              <li>
+                <a href="#features"
+                  ><i class="fa fa-angle-double-right"></i>FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#Testimonials"
+                  ><i class="fa fa-angle-double-right"></i>Reviews</a
+                >
+              </li>
+              <li>
+                <a href="#subscribe"
+                  ><i class="fa fa-angle-double-right"></i>Subscription</a
+                >
+              </li>
+              <li>
+                <a href="#downloading"
+                  ><i class="fa fa-angle-double-right"></i>Downloads</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.imdb.com/title/tt1345836/?ref_=tt_sims_tt_t_1/"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.imdb.com/title/tt0468569/?ref_=tt_sims_tt_t_2"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.imdb.com/title/tt0372784/?ref_=tt_sims_tt_t_3"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
 
-    <div class="bot">
-        <a class="footer" href="https://www.imdb.com/title/tt0372784/?ref_=tt_sims_tt_t_3">LinkedIn</a>
-        <a class="footer-link" href="https://www.imdb.com/title/tt0468569/?ref_=tt_sims_tt_t_2">Twitter</a>
-        <a class="footer-link" href="https://www.imdb.com/title/tt1345836/?ref_=tt_sims_tt_t_1/">Website</a>
-        <p class="copyright" style="font-size: 0.85rem; margin-top: 20px;">© 2023 Bruce Wayne @ The Wayne Enterprise.</p>
+              <li class="list-inline-item">
+                <a href="https://www.imdb.com/title/tt1877830/" target="_blank"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+        </div>
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
+          >
+            <p class="h6">
+              © All right Reserved by<a
+                class="text-green ml-2"
+                href="#"
+                target="_blank"
+                >Batman</a
+              >
+            </p>
+          </div>
+          <hr />
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
