@@ -5,4 +5,12 @@ $(document).ready(function () {
   $("#subscribe button[type=button]").click(function () {
     window.alert("This would have worked too ...");
   });
+  $("#subscribe button[type=button]").hover(
+    function () {
+      $(this).css("font-size", "1.4rem");
+    },
+    function () {
+      $(this).css("font-size", "1.2rem");
+    }
+  );
 });
