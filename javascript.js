@@ -13,4 +13,12 @@ $(document).ready(function () {
       $(this).css("font-size", "1.2rem");
     }
   );
+  $(".nav-link").hover(
+    function () {
+      $(this).css("color", "GhostWhite");
+    },
+    function () {
+      $(this).css("color", "rgba(255, 255, 255, 0.5)");
+    }
+  );
 });
