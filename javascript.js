@@ -3,7 +3,7 @@ $(document).ready(function () {
     window.alert("This would have work if there was a server!");
   });
   $("#subscribe button[type=button]").click(function () {
-    window.alert("This would have worked too ...");
+    window.alert("This would have worked too...");
   });
   $("#subscribe button[type=button]").hover(
     function () {
