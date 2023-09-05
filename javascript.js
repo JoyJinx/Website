@@ -21,4 +21,16 @@ $(document).ready(function () {
       $(this).css("color", "rgba(255, 255, 255, 0.5)");
     }
   );
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > $("nav").height()) {
+      $(".navbar").addClass("fixed-top");
+      $(".navbar").removeClass("bg-transparent");
+      $(".navbar").css("backgroundColor", "#282a3a");
+      $(".navbar").css("height", "10%");
+    } else {
+      $(".navbar").removeClass("fixed-top");
+      $(".navbar").addClass("bg-transparent");
+      $(".navbar").css("height", "initial");
+    }
+  });
 });
