@@ -26,11 +26,11 @@ $(document).ready(function () {
       $(".navbar").addClass("fixed-top");
       $(".navbar").removeClass("bg-transparent");
       $(".navbar").css("backgroundColor", "#282a3a");
-      $(".navbar").css("height", "10%");
+      //$(".navbar").css("height", "5%");
     } else {
       $(".navbar").removeClass("fixed-top");
       $(".navbar").addClass("bg-transparent");
-      $(".navbar").css("height", "initial");
+      //$(".navbar").css("height", "initial");
     }
   });
   $(window).on("scroll", function () {
