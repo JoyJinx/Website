@@ -33,4 +33,14 @@ $(document).ready(function () {
       $(".navbar").css("height", "initial");
     }
   });
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 600) {
+      $("#scrollTop").show();
+      $("#scrollTop").click(function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    } else {
+      $("#scrollTop").hide();
+    }
+  });
 });
