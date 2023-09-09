@@ -7,7 +7,7 @@ $(document).ready(function () {
   });
   $("#subscribe button[type=button]").hover(
     function () {
-      $(this).css("font-size", "1.4rem");
+      $(this).css("font-size", "1.35rem");
     },
     function () {
       $(this).css("font-size", "1.2rem");
